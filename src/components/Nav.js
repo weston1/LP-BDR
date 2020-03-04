@@ -49,9 +49,9 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/">How It Works</NavLink>
-            <NavLink to="/components/">Sign Up</NavLink>
-            <NavLink to="/default/">Chat</NavLink>
+            <NavLink to="/about">How It Works</NavLink>
+            <NavLink to="/sign-up">Sign Up</NavLink>
+            <NavLink to="/contact">Chat</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

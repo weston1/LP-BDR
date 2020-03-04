@@ -95,7 +95,8 @@ class Form extends React.Component {
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
-              type="number"
+              inputmode="numeric" 
+              pattern="[0-9]*"
               placeholder="Phone"
               name="phone"
               required
@@ -105,7 +106,8 @@ class Form extends React.Component {
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
-              type="number"
+              inputmode="numeric" 
+              pattern="[0-9]*"
               placeholder="Zip Code"
               name="zip"
               required

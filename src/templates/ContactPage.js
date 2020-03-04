@@ -1,7 +1,5 @@
 import React from 'react'
-
 import { graphql } from 'gatsby'
-
 import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
@@ -39,7 +37,7 @@ export const ContactPageTemplate = ({ body }) => (
             />
           </div>
           <div className="Contact--Details">
-          <Content source={body} />
+            <Content source={body} />
           </div>
           <FormSimpleAjax name="Simple Form Ajax" />
         </div>
