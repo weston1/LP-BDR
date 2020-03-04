@@ -1,16 +1,14 @@
 .Nav {
-  background: white;
+  background: transparent;
   position: sticky;
-  top: 0;
+  top: 5rem;
   z-index: 2;
-  border-bottom: 1px solid var(--lightGrey);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
 .Nav--Container {
   display: flex;
   align-items: center;
-  height: 6rem;
+  height: 0;
 }
 
 .Nav--Links {
@@ -25,7 +23,7 @@
 }
 
 .Nav .Logo {
-  margin-right: 3rem;
+  margin-right: 1rem;
   position: relative;
 }
 
@@ -36,10 +34,14 @@
 .NavLink {
   padding: 0.5rem 1rem;
   display: block;
-  font-weight: 500;
-  transition: color 0.2s, border-bottom-color 0.2s;
-  color: inherit;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 30px;
+  transition: all 0.2s;
+  color: white;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
 }
@@ -47,8 +49,7 @@
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
-  color: var(--primary);
-  border-bottom-color: currentColor;
+  color: black;
 }
 
 .Nav--Group {
@@ -112,6 +113,7 @@
     display: block !important;
     margin-left: auto;
     z-index: 1;
+
   }
   .Nav .Logo {
     z-index: 1;
@@ -127,7 +129,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: var(--primary);
     animation: Nav--Links 0.2s ease;
   }
 
@@ -147,7 +149,8 @@
 
   .Nav .NavLink {
     font-size: 2.5rem;
-    font-weight: 300;
+    font-weight: 800;
+    letter-spacing: 1px;
   }
 
   .Nav .NavLink:nth-of-type(2) {

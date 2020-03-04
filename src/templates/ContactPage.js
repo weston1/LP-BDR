@@ -1,68 +1,50 @@
 import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
+
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
 import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
-import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
-export const ContactPageTemplate = ({
-  body,
-  title,
-  subtitle,
-  featuredImage,
-  address,
-  phone,
-  email,
-  locations
-}) => (
+export const ContactPageTemplate = ({ body }) => (
   <main className="Contact">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
-    <section className="section Contact--Section1">
-      <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
-            )}
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
+    <section className="Contact--Section1 row">
+      <div className="Contact--BG col-lg-6">
+        <div className="Contact--Logo--Container mx-auto">
+          <div className="taCenter py-3">
+            <img
+              src="/images/Logo_Large.svg"
+              className="img-fluid my-auto py-3 Contact--Logo--Container"
+              alt="O.penVAPE - Bakked - Pressies - District - Firefly"
+            />
+          </div>
+          <div className="taCenter py-3">
+            <img
+              src="/images/Logo_Family.svg"
+              className="img-fluid mx-auto taCenter"
+              alt="O.penVAPE - Bakked - Pressies - District - Firefly"
+            />
           </div>
         </div>
-
-        <div>
+      </div>
+      <div className="Contact--Card col-lg-6">
+        <div className="container my-auto">
+          <div className="taLeft py-5 desktop-only">
+            <img
+              src="/images/Logo_Small.svg"
+              className="img-fluid mx-auto py-3"
+              alt="O.penVAPE - Bakked - Pressies - District - Firefly"
+            />
+          </div>
+          <div className="Contact--Details">
+          <Content source={body} />
+          </div>
           <FormSimpleAjax name="Simple Form Ajax" />
         </div>
       </div>
     </section>
-
-    <GoogleMap locations={locations} />
   </main>
 )
 
@@ -87,14 +69,6 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        address
-        phone
-        email
-        locations {
-          mapLink
-          lat
-          lng
-        }
       }
     }
   }
