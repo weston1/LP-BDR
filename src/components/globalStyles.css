@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Nunito|Source+Sans+Pro&display=swap');
 :root {
   --primary: #0fd178;
   --secondary: #000;
@@ -7,8 +6,9 @@
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: "Source Sans Pro", sans-serif;
-  --font-system: "Nunito", system-ui; /* postcssPresetEnv */
+  --font-primary: 'Source Sans Pro', sans-serif;
+  --font-system: 'Nunito', system-ui; /* postcssPresetEnv */
+  --font-smash: 'Luckiest Guy', sans-serif; /* postcssPresetEnv */
   --borderRadius: 10px;
 }
 
@@ -50,6 +50,7 @@ body {
 
 a {
   color: var(--primary);
+  text-decoration: none;
 }
 
 strong {
@@ -152,12 +153,18 @@ blockquote {
   }
 }
 
+/* Team Page Edits */
+
+.super-smash {
+  font-family: var(--font-smash) !important;
+  letter-spacing: 4px;
+}
+
 /* Layout */
 
 .section {
   width: 100%;
   padding: 5rem 0;
-  border-bottom: 1px solid #f1f1f1;
 }
 .section:last-child {
   border: 0;

@@ -49,9 +49,22 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/about">How It Works</NavLink>
-            <NavLink to="/sign-up">Sign Up</NavLink>
-            <NavLink to="/contact">Chat</NavLink>
+            <a
+              className="NavLink"
+              target="blank"
+              href="https://loilpoints.com/about"
+            >
+              How It Works
+            </a>
+            <NavLink to="/">Sign Up</NavLink>
+            <a
+              className="NavLink"
+              target="blank"
+              href="https://loilpoints.com"
+              alt="loilpoints"
+            >
+              App
+            </a>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

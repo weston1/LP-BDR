@@ -11,8 +11,7 @@ class Form extends React.Component {
     subject: 'loilpoints Sign Up', // optional subject of the notification email
     action: '',
     successMessage: 'Welcome to loilpoints!',
-    errorMessage:
-      'Please fill out all fields before submitting.'
+    errorMessage: 'Please fill out all fields before submitting.'
   }
 
   state = {
@@ -58,9 +57,7 @@ class Form extends React.Component {
 
     return (
       <Fragment>
-        <Helmet>
-          <script src="https://www.google.com/recaptcha/api.js" />
-        </Helmet>
+        <Helmet></Helmet>
         <form
           className="Form"
           name={name}
@@ -72,41 +69,41 @@ class Form extends React.Component {
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
           )}
-            <label className="Form--Label">
-              <input
-                className="Form--Input Form--InputText"
-                type="text"
-                placeholder="Name"
-                name="firstname"
-                required
-              />
-              <span>Name</span>
-            </label>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="text"
+              placeholder="Name*"
+              name="firstname"
+              required
+            />
+            <span>Name*</span>
+          </label>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
               type="email"
-              placeholder="Email"
+              placeholder="Email*"
               name="emailAddress"
               required
             />
-            <span>Email</span>
+            <span>Email*</span>
           </label>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
-              inputmode="numeric" 
+              inputmode="numeric"
               pattern="[0-9]*"
-              placeholder="Phone"
+              placeholder="Phone*"
               name="phone"
               required
             />
-            <span>Phone</span>
+            <span>Phone*</span>
           </label>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
-              inputmode="numeric" 
+              inputmode="numeric"
               pattern="[0-9]*"
               placeholder="Zip Code"
               name="zip"
@@ -114,7 +111,6 @@ class Form extends React.Component {
             />
             <span>Zip Code</span>
           </label>
-
 
           <label className="Form--Label Form-Checkbox">
             <input
@@ -125,10 +121,6 @@ class Form extends React.Component {
             />
             <span>Get news updates</span>
           </label>
-          <div
-            className="g-recaptcha"
-            data-sitekey="6LfKN3kUAAAAAGIM1CbXmaRZx3LIh_W2twn1tzkA"
-          />
           {!!subject && <input type="hidden" name="subject" value={subject} />}
           <input type="hidden" name="form-name" value={name} />
           <input

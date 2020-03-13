@@ -1,0 +1,141 @@
+.FeatureArray {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.FeatureArray figcaption {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  line-height: 2rem;
+}
+
+.FeatureArray p {
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+  text-align: center;
+}
+.FeatureArray .team-container {
+  text-decoration: none;
+}
+.FeatureArray .team {
+  margin: 2rem auto;
+  width: 100px;
+  height: 100px;
+  transition: all ease 0.3s;
+}
+.FeatureArray .team-img {
+  border-radius: 50%;
+  transition: all ease 0.3s;
+  color: black;
+}
+.FeatureArray .team-img:hover {
+  transition: all 0.3s;
+  box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 750px) {
+  .FeatureArray {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.FeatureArray--Item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 5rem);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  filter: saturate(0);
+}
+.FeatureArray--Item:hover {
+  filter: saturate(1);
+}
+
+@media screen and (max-width: 750px) {
+  .FeatureArray--Item {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
+
+.FeatureArray--Item > div {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.FeatureArray--Item figcaption {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+
+@supports (object-fit: cover) {
+  .FeatureArray--Item img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+}
+
+.Popup-Overlay {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Popup-Background {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Popup-Inner {
+  background: white;
+  top: 35%;
+  margin: 0 auto;
+  width: 400px;
+  height: 50%;
+  max-width: 500px;
+  max-height: 400px;
+  display: block;
+  position: fixed;
+  z-index: 99999999;
+  padding: 8rem;
+  overflow: hidden;
+  transition: ease all 0.2s;
+  box-shadow: 20px 20px 100px var(--secondary);
+}
+
+.Popup-Close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}

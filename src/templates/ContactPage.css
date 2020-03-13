@@ -13,12 +13,11 @@
 }
 .Contact--Card {
   background-color: white;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
 }
 
 .Contact--Details {
-  margin-top: 3rem;
+  margin-top: 0.1rem;
 }
 
 .Contact--Details--Item {
@@ -44,6 +43,9 @@
   .Contact--Logo--Container {
     max-width: 100px !important;
     padding: 5% 0 0 0;
+  }
+  .Contact--Card {
+    padding: 5rem 0;
   }
 }
 
