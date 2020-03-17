@@ -144,6 +144,10 @@
   .TeamHeader {
     padding: 15rem 0;
   }
+  .TeamHeader--Title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
   .TeamHeader-large {
     padding: 20rem 0;
   }
