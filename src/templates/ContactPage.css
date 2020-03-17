@@ -1,9 +1,14 @@
 .Contact {
+  height: 100%;
+}
+.Contact--Section1 {
+  min-height: 750px;
   height: 100vh;
+  background-color: white;
 }
 .Contact--BG {
   background: url('../../static/images/BackgroundImage.png');
-  background-size: 125%;
+  background-size: 150%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -14,6 +19,7 @@
 .Contact--Card {
   background-color: white;
   height: 100%;
+  margin: 2rem 0;
 }
 
 .Contact--Details {

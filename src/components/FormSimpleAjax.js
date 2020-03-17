@@ -105,6 +105,7 @@ class Form extends React.Component {
               className="Form--Input Form--InputText"
               inputmode="numeric"
               pattern="[0-9]*"
+              maxLength="5"
               placeholder="Zip Code"
               name="zip"
               required

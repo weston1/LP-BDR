@@ -1,5 +1,4 @@
 .Nav {
-  background: transparent;
   position: sticky;
   top: 5rem;
   z-index: 2;
@@ -105,15 +104,19 @@
 }
 
 @media (max-width: 600px) {
+  .Nav {
+    background: black !important;
+  }
   .Nav--Container {
     display: flex;
+    background: black !important;
   }
 
   .Nav--MenuButton {
     display: block !important;
     margin-left: auto;
     z-index: 1;
-
+    color: white;
   }
   .Nav .Logo {
     z-index: 1;

@@ -1,6 +1,6 @@
 ---
 template: ComponentsPage
-slug: components
+slug: ''
 title: Please select your team members.
 featuredImage: 'https://www.aaacoin.us/wp-content/uploads/2017/09/super_mario_coins-1.png'
 section1: >-

@@ -19,7 +19,7 @@ export const query = graphql`
         image
         title
         subtitle
-        bio
+        team
       }
     }
   }
@@ -90,7 +90,7 @@ export default class FeatureArray extends Component {
                     onClick={() => this.isOpen(true, index)}
                   >
                     <div className="team-container">
-                      <Link to="/">
+                      <Link to={image.team}>
                         <div className="team">
                           <Image
                             resolutions="small"
@@ -98,7 +98,6 @@ export default class FeatureArray extends Component {
                             alt={image.alt}
                             className="team-img img-fluid"
                           />
-                          <PlayCircle size="50" className="team-img" />
                         </div>
                         {image.title && <figcaption>{image.title}</figcaption>}
                         <div>

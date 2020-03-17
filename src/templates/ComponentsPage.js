@@ -2,11 +2,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import TeamHeader from '../components/TeamHeader'
-import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
+import Content from '../components/Content'
 import FeatureArray from '../components/FeatureArray'
 import Accordion from '../components/Accordion'
-import { PlayCircle } from 'react-feather'
 
 // Export Template for use in CMS preview
 export const ComponentsPageTemplate = ({
@@ -14,6 +13,7 @@ export const ComponentsPageTemplate = ({
   subtitle,
   featuredImage,
   featureArray,
+  section1,
   accordion
 }) => (
   <main>
@@ -32,6 +32,12 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Accordion items={accordion} />
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="container text-center">
+        <p className="small">&copy; loilpoints 2020.</p>
       </div>
     </section>
   </main>
@@ -59,6 +65,7 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
+        section1
         accordion {
           title
           description

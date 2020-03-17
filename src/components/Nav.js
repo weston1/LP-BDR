@@ -49,6 +49,7 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
+            <NavLink to="/">Teams</NavLink>
             <a
               className="NavLink"
               target="blank"
@@ -56,7 +57,7 @@ export class Navigation extends Component {
             >
               How It Works
             </a>
-            <NavLink to="/">Sign Up</NavLink>
+
             <a
               className="NavLink"
               target="blank"
@@ -67,7 +68,7 @@ export class Navigation extends Component {
             </a>
           </div>
           <button
-            className="Button-blank Nav--MenuButton"
+            className="Button Button-nav Nav--MenuButton"
             onClick={this.handleMenuToggle}
           >
             {active ? <X /> : <Menu />}

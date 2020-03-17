@@ -126,6 +126,7 @@
 
 .Form--Input::placeholder {
   color: transparent;
+  background: var(--white);
 }
 
 .Form--Alert {
