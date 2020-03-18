@@ -1171,3 +1171,18 @@ blockquote {
   height: 50px;
   max-width: 60px;
 }
+
+.Team-Array {
+  animation: Team-Array 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+.Team-Array:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+.Team-Array:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+.Team-Array:nth-of-type(4) {
+  animation-delay: 0.3s;
+}

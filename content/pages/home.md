@@ -2,7 +2,7 @@
 template: ComponentsPage
 slug: ''
 title: Select your team.
-featuredImage: './images/paper_fibers.png'
+featuredImage: './images/bub.jpg'
 featureArray:
   - alt: Denver West
     image: '../images/teams/team1.svg'

@@ -6,7 +6,7 @@
 }
 
 .TeamHeader .BackgroundImage {
-  opacity: 0.1;
+  opacity: 0.05;
 }
 
 .TeamHeader-large {
@@ -142,10 +142,10 @@
 
 @media (max-width: 600px) {
   .TeamHeader {
-    padding: 15rem 0;
+    padding: 11rem 0;
   }
   .TeamHeader--Title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 4rem;
   }
   .TeamHeader-large {

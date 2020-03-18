@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 
 import TeamHeader from '../components/TeamHeader'
 import Layout from '../components/Layout.js'
-import Content from '../components/Content'
 import FeatureArray from '../components/FeatureArray'
 import Accordion from '../components/Accordion'
 
@@ -13,7 +12,6 @@ export const ComponentsPageTemplate = ({
   subtitle,
   featuredImage,
   featureArray,
-  section1,
   accordion
 }) => (
   <main>
@@ -25,7 +23,7 @@ export const ComponentsPageTemplate = ({
     />
     <section className="section">
       <div className="container">
-        <FeatureArray images={featureArray} />
+        <FeatureArray images={featureArray} className="Team-Array" />
       </div>
     </section>
 
@@ -65,7 +63,6 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        section1
         accordion {
           title
           description
