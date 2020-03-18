@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
+import Content from '../components/Content'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -17,6 +18,13 @@ export const DefaultPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
+    <form name="contact" class="form" method="POST" data-netlify="true">
+      <h1>Wanna spread the word?</h1>
+      <button class="btn" type="submit">
+        Send messages!
+      </button>
+    </form>
+    <Content source={body} />
   </main>
 )
 

@@ -1,7 +1,14 @@
 [build]
   publish = "public"
-  functions = "functions"
+  functions = ".functions"
   command = "npm run build"
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+
+[template.environment]
+  TWILIO_ACCOUNT_SID = "Your Twilio account sid"
+  TWILIO_AUTH_TOKEN = "Your Twilio account auth token"
+  BOT_NUMBER = "The bot phone number (Whatsapp or SMS)"
+  BOT_MESSAGE = "Message that should be sent"
+  CONTACT_NUMBERS = "Numbers that should receive your message (devided with ;)"

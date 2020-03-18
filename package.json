@@ -1,15 +1,16 @@
 {
-  "name": "yellowcake",
-  "HomePage": "https://yellowcake.netlify.com/",
-  "description": "An opinionated starter project for creating lightning-fast websites with Gatsby v2 and Netlify CMS v2",
+  "name": "lpBDR",
+  "HomePage": "https://loil.app",
+  "description": "loilpoints cannabis rewards app - Sign Up today.",
   "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thriveweb/yellowcake"
+    "url": "https://github.com/weston1/LP-BDR"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "dom-form-serializer": "^1.0.7",
+    "dotenv": "^6.2.0",
     "gatsby": "^2.17.7",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-google-tagmanager": "^2.1.15",
@@ -35,6 +36,7 @@
     "lodash.clonedeep": "^4.5.0",
     "modern-normalize": "^0.5.0",
     "netlify-cms-app": "^2.9.7",
+    "netlify-lambda": "^1.4.2",
     "node-sass": "^4.13.0",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
@@ -44,7 +46,8 @@
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.2.2",
     "react-photoswipe": "^1.3.0",
-    "react-useanimations": "^1.2.12"
+    "react-useanimations": "^1.2.12",
+    "twilio": "^3.28.1"
   },
   "keywords": [
     "gatsby"
