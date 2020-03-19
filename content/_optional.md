@@ -1,10 +1,10 @@
 ---
 meta:
   canonicalLink: ''
-  description: ''
-  noindex: false
-  title: ''
-featuredImage: 'https://ucarecdn.com/3ce1b407-7d43-413f-a45a-c0699ede8f8b/'
+  description: 'BDR Sign Up'
+  noindex: true
+  title: 'loilpoints'
+featuredImage: './images/logo.png'
 gallery:
   - alt: ''
     image: ''

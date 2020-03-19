@@ -13,8 +13,8 @@ meta:
       form.addEventListener('submit', async event => {
         event.preventDefault();
 
-        // enable local testing
-        const IS_PRODUCTION = !/127\.0\.0\.1/.test(window.location);
+// enable local testing
+const IS_PRODUCTION = !/127\.0\.0\.1/.test(window.location);
         const SUBMISSION_URL = IS_PRODUCTION
           ? '/'
           : 'http://127.0.0.1:9000/submission-created';
@@ -40,4 +40,5 @@ meta:
           console.error(e);
         }
       });
+
 </script>
