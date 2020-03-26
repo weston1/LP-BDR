@@ -59,12 +59,11 @@ class Form extends React.Component {
       <Fragment>
         <Helmet></Helmet>
         <form
-          className="Form"
-          name={name}
-          action={action}
-          onSubmit={this.handleSubmit}
+          class="Form"
+          name="contact"
+          method="POST"
+          netlify-honeypot="bot-field"
           data-netlify="true"
-          netlify-recaptcha=""
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
