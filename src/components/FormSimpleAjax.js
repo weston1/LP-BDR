@@ -59,12 +59,11 @@ class Form extends React.Component {
       <Fragment>
         <Helmet></Helmet>
         <form
-          class="Form"
-          name="contact"
-          method="POST"
-          netlify-honeypot="bot-field"
+          className="Form"
+          name={name}
+          action={action}
+          onSubmit={this.handleSubmit}
           data-netlify="true"
-          netlify
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
