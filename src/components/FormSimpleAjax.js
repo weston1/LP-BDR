@@ -64,6 +64,7 @@ class Form extends React.Component {
           method="POST"
           netlify-honeypot="bot-field"
           data-netlify="true"
+          netlify
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
