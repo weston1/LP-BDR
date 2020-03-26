@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import '../components/Form.css'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
@@ -43,79 +44,80 @@ export const ContactPageTemplate = ({ body }) => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/thank-you"
           >
             {/* You still need to add the hidden input with the form name to your JSX form */}
             <input type="hidden" name="form-name" value="contact" />
-            <div className="Form--Group py-3">
+            <div className="py-2">
               <label className="Form--Label">
                 <input
                   className="Form--Input Form--InputText"
                   type="text"
-                  placeholder="Firstname"
+                  placeholder="Name*"
                   name="firstname"
                   required
                 />
-                <span>First Name</span>
-              </label>
-              <label className="Form--Label">
-                <input
-                  className="Form--Input Form--InputText"
-                  type="text"
-                  placeholder="Lastname"
-                  name="lastname"
-                  required
-                />
-                <span>Last Name</span>
+                <span>Name*</span>
               </label>
             </div>
-            <div className="py-3">
+
+            <div className="py-2">
               <label className="Form--Label">
                 <input
                   className="Form--Input Form--InputText"
                   type="email"
-                  placeholder="Email"
+                  placeholder="Email*"
                   name="emailAddress"
                   required
                 />
-                <span>Email</span>
+                <span>Email*</span>
               </label>
             </div>
-            <div className="py-3">
-              <label className="Form--Label has-arrow">
-                <select
-                  className="Form--Input Form--Select"
-                  name="type"
-                  defaultValue="Type of Enquiry"
-                  required
-                >
-                  <option disabled hidden>
-                    Type of Enquiry
-                  </option>
-                  <option>Cartridge Issue</option>
-                  <option>Blinking Lights</option>
-                  <option>Warranty</option>
-                  <option>Feedback</option>
-                  <option>Other</option>
-                </select>
-              </label>
-            </div>
-            <div className="py-3">
+
+            <div className="py-2">
               <label className="Form--Label">
-                <textarea
-                  className="Form--Input Form--Textarea Form--InputText"
-                  placeholder="Message"
-                  name="message"
-                  rows="10"
+                <input
+                  className="Form--Input Form--InputText"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  placeholder="Phone*"
+                  name="phone"
                   required
                 />
-                <span>Message</span>
+                <span>Phone*</span>
               </label>
             </div>
+
+            <div className="py-2">
+              <label className="Form--Label">
+                <input
+                  className="Form--Input Form--InputText"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  maxLength="5"
+                  placeholder="Zip Code*"
+                  name="zip"
+                  required
+                />
+                <span>Zip*</span>
+              </label>
+            </div>
+
+            <label className="Form--Label Form-Checkbox py-2">
+              <input
+                className="Form--Input Form--Textarea Form--CheckboxInput"
+                name="newsletter"
+                type="checkbox"
+                defaultChecked
+              />
+              <span>Get news updates</span>
+            </label>
             <p>
               <button type="submit" className="Button Form--SubmitButton">
-                Send
+                Learn More
               </button>
             </p>
+            <small>*Mandatory Field</small>
           </form>
         </div>
       </div>
