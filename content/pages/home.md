@@ -2,7 +2,7 @@
 template: ComponentsPage
 slug: ''
 title: Select your team.
-featuredImage: './images/bub.jpg'
+featuredImage: './images/brands-masthead.jpg'
 featureArray:
   - alt: Denver West
     image: '../images/teams/team1.svg'
@@ -35,7 +35,7 @@ section2: |-
   src="https://www.youtube.com/embed/Js00yn142ic" frameborder="0"
   allow="autoplay; encrypted-media" allowfullscreen></iframe>
 accordion:
-  - description: Please contact Parker for any loilpoint related questions.
+  - description: Please contact Parker with any loilpoints related questions.
     title: Questions?
 meta:
   description: loilpoints BDR Sign Up

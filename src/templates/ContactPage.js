@@ -44,7 +44,6 @@ export const ContactPageTemplate = ({ body }) => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            action="/thank-you"
           >
             {/* You still need to add the hidden input with the form name to your JSX form */}
             <input type="hidden" name="form-name" value="contact" />
@@ -102,16 +101,17 @@ export const ContactPageTemplate = ({ body }) => (
                 <span>Zip*</span>
               </label>
             </div>
-
-            <label className="Form--Label Form-Checkbox py-2">
-              <input
-                className="Form--Input Form--Textarea Form--CheckboxInput"
-                name="newsletter"
-                type="checkbox"
-                defaultChecked
-              />
-              <span>Get news updates</span>
-            </label>
+            <div className=" py-2">
+              <label className="Form--Label Form-Checkbox">
+                <input
+                  className="Form--Input Form--Textarea Form--CheckboxInput"
+                  name="newsletter"
+                  type="checkbox"
+                  defaultChecked
+                />
+                <span>Get news updates</span>
+              </label>
+            </div>
             <p>
               <button type="submit" className="Button Form--SubmitButton">
                 Learn More

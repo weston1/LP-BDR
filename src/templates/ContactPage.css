@@ -3,7 +3,7 @@
 }
 .Contact--Section1 {
   min-height: 750px;
-  height: 100vh;
+  max-height: 100vh;
   background-color: white;
 }
 .Contact--BG {
