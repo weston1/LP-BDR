@@ -78,9 +78,9 @@ export const ContactPageTemplate = ({ body }) => (
                 <input
                   className="Form--Input Form--InputText"
                   inputmode="numeric"
-                  pattern="[0-9]{10}"
+                  pattern="[0-9]*"
                   placeholder="Phone"
-                  maxLength="10"
+                  maxLength="11"
                   name="phone"
                   type="tel"
                   required
