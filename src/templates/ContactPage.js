@@ -80,12 +80,12 @@ export const ContactPageTemplate = ({ body }) => (
                   inputmode="numeric"
                   pattern="[0-9]{10}"
                   placeholder="Phone"
-                  maxLength="5"
+                  maxLength="10"
                   name="phone"
                   type="tel"
                   required
                 />
-                <span>+1(###)###-####*</span>
+                <span>#-###-###-####</span>
               </label>
             </div>
 
